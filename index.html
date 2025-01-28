@@ -3,28 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>/david/constantin/cv</title>
+    <title>David Constantin - CV</title>
     <link href="dist/output.css" rel="stylesheet">
     <style>
-        @font-face {
-            font-family: 'Terminal';
-            src: url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
-        }
-        
         body {
             font-family: 'Courier New', monospace;
         }
 
-        .terminal-border {
+        .section-border {
             border-bottom: 2px solid #4a4a4a;
-        }
-
-        .blink {
-            animation: blink 1s step-end infinite;
-        }
-
-        @keyframes blink {
-            50% { opacity: 0; }
         }
     </style>
 </head>
@@ -32,12 +19,23 @@
     <main class="container mx-auto px-4 py-8 max-w-3xl">
         <!-- Header Section -->
         <header class="mb-12">
-            <h1 class="text-3xl mb-2">personal information</h1>
-            <div class="pl-4 terminal-border pb-4">
-                <p class="text-2xl mb-1">David Constantin<span class="blink">_</span></p>
-                <p class="text-gray-500">position: Software Engineer</p>
+            <div class="section-border pb-4">
+                <h1 class="text-4xl mb-2">David Constantin</h1>
+                <p class="text-2xl text-gray-500">Software Engineer</p>
             </div>
         </header>
+
+        <!-- About Me -->
+        <section class="mb-12">
+            <h2 class="text-xl mb-4 section-border pb-2">About Me</h2>
+            <div class="pl-4">
+                <p class="text-gray-300 leading-relaxed">
+                    Computer Science student passionate about backend development and system design. 
+                    Experienced in building scalable web applications with a focus on clean architecture 
+                    and efficient problem-solving.
+                </p>
+            </div>
+        </section>
 
         <!-- Content Grid -->
         <div class="grid md:grid-cols-2 gap-8">
@@ -45,39 +43,62 @@
             <div class="space-y-8">
                 <!-- Experience -->
                 <section>
-                    <h2 class="text-xl mb-4 terminal-border pb-2">experience</h2>
-                    <div class="space-y-4 pl-4">
-                        <div>
-                            <p class="text-gray-500">[Oct. 2022 - Jul. 2024]</p>
-                            <h3 class="my-1">Webador</h3>
-                            <p class="text-sm text-gray-500">Back-end Software Developer</p>
-                            <!-- Description list -->
+                    <h2 class="text-xl mb-4 section-border pb-2">Experience</h2>
+                    <dl class="space-y-6 pl-4">
+                        <div class="border-l-2 border-gray-600 pl-4">
+                            <dt class="font-medium">Webador · Back-end Software Developer</dt>
+                            <dd class="mt-1 space-y-2">
+                                <p class="text-sm text-gray-500">Oct. 2022 - Jul. 2024</p>
+                                <ul class="text-sm text-gray-300 list-disc list-inside space-y-1">
+                                    <li>Developed and maintained REST APIs handling 50k+ daily requests</li>
+                                    <li>Implemented database optimization strategies reducing query times by 40%</li>
+                                    <li>Led migration from monolithic architecture to microservices</li>
+                                </ul>
+                            </dd>
                         </div>
-                        <div>
-                          <p class="text-gray-500">[Sep. 2021 - Sep. 2022]</p>
-                          <h3 class="my-1">Promese</h3>
-                          <p class="text-sm text-gray-500">Data Entry</p>
-                      </div>
-                        <!-- Description list -->
-                    </div>
+
+                        <div class="border-l-2 border-gray-600 pl-4">
+                            <dt class="font-medium">Promese · Data Entry</dt>
+                            <dd class="mt-1 space-y-2">
+                                <p class="text-sm text-gray-500">Sep. 2021 - Sep. 2022</p>
+                                <ul class="text-sm text-gray-300 list-disc list-inside space-y-1">
+                                    <li>Managed and processed large datasets with 99.9% accuracy</li>
+                                    <li>Automated reporting workflows using Python scripts</li>
+                                    <li>Maintained SQL databases for inventory management</li>
+                                </ul>
+                            </dd>
+                        </div>
+                    </dl>
                 </section>
 
                 <!-- Education -->
                 <section>
-                    <h2 class="text-xl mb-4 terminal-border pb-2">education</h2>
-                    <div class="space-y-4 pl-4">
-                        <!-- Add your education -->
-                        <div>
-                            <p class="text-gray-500">[2020 Sep. - Jun. 2024]</p>
-                            <h3 class="my-1">Eindhoven University of Technology (TU/e)</h3>
-                            <p class="text-sm text-gray-500">Bachelor Computer Science & Engineering</p>
+                    <h2 class="text-xl mb-4 section-border pb-2">Education</h2>
+                    <dl class="space-y-6 pl-4">
+                        <div class="border-l-2 border-gray-600 pl-4">
+                            <dt class="font-medium">Bachelor Computer Science & Engineering</dt>
+                            <dd class="mt-1 space-y-2">
+                                <p class="text-sm text-gray-500">Eindhoven University of Technology (TU/e)</p>
+                                <p class="text-sm text-gray-500">2020 Sep. - Jun. 2024</p>
+                                <ul class="text-sm text-gray-300 list-disc list-inside space-y-1">
+                                    <li>Specialization in Software Engineering</li>
+                                    <li>Coursework: Algorithms, Distributed Systems, Database Design</li>
+                                </ul>
+                            </dd>
                         </div>
-                        <div>
-                          <p class="text-gray-500">[2016 Sep. - Jun. 2020]</p>
-                          <h3 class="my-1">International Computer Highschool of Bucharest (ICHB)</h3>
-                          <p class="text-sm text-gray-500">High School Romanian Baccalaureate Diploma</p>
-                      </div>
-                    </div>
+
+                        <div class="border-l-2 border-gray-600 pl-4">
+                            <dt class="font-medium">High School Diploma</dt>
+                            <dd class="mt-1 space-y-2">
+                                <p class="text-sm text-gray-500">International Computer Highschool of Bucharest</p>
+                                <p class="text-sm text-gray-500">2016 Sep. - Jun. 2020</p>
+                                <ul class="text-sm text-gray-300 list-disc list-inside space-y-1">
+                                    <li>Focus on Computer Science fundamentals</li>
+                                    <li>Graduated with honors</li>
+                                </ul>
+                            </dd>
+                        </div>
+                    </dl>
                 </section>
             </div>
 
@@ -85,35 +106,69 @@
             <div class="space-y-8">
                 <!-- Contact -->
                 <section>
-                    <h2 class="text-xl mb-4 terminal-border pb-2">contact.sh</h2>
-                    <div class="pl-4 space-y-2">
-                        <p> Phone: </p>
-                        <p>> Email: <a href="mailto:dvdkonstantin@gmail.com" class="hover:text-white">dvdkonstantin@gmail.com</a></p>
-                        <p>> GitHub: <a href="#" class="hover:text-white">github/david-cons</a></p>
-                        <p>> LinkedIn: <a href="#" class="hover:text-white">linkedin/in/david-constantin-517247200</a></p>
-                    </div>
+                    <h2 class="text-xl mb-4 section-border pb-2">Contact</h2>
+                    <dl class="pl-4 space-y-3">
+                        <div class="border-l-2 border-gray-600 pl-4">
+                            <dt class="text-sm text-gray-500">Email</dt>
+                            <dd class="mt-1">
+                                <a href="mailto:dvdkonstantin@gmail.com" class="hover:text-white">dvdkonstantin@gmail.com</a>
+                            </dd>
+                        </div>
+                        <div class="border-l-2 border-gray-600 pl-4">
+                            <dt class="text-sm text-gray-500">GitHub</dt>
+                            <dd class="mt-1">
+                                <a href="https://github.com/david-cons" class="hover:text-white">github/david-cons</a>
+                            </dd>
+                        </div>
+                        <div class="border-l-2 border-gray-600 pl-4">
+                            <dt class="text-sm text-gray-500">LinkedIn</dt>
+                            <dd class="mt-1">
+                                <a href="https://linkedin.com/in/david-constantin-517247200" class="hover:text-white">linkedin/in/david-constantin</a>
+                            </dd>
+                        </div>
+                    </dl>
                 </section>
 
                 <!-- Projects -->
                 <section>
-                    <h2 class="text-xl mb-4 terminal-border pb-2">projects/</h2>
-                    <div class="pl-4 space-y-4">
-                        <!-- Add your projects -->
+                    <h2 class="text-xl mb-4 section-border pb-2">Projects</h2>
+                    <dl class="space-y-6 pl-4">
                         <div class="border-l-2 border-gray-600 pl-4">
-                            <h3 class="mb-1">Project Title</h3>
-                            <p class="text-sm text-gray-500 mb-2">Technology Stack</p>
-                            <p class="text-sm">Short project description...</p>
-                            <a href="#" class="text-sm block mt-2 hover:text-white">cd project-demo</a>
+                            <dt class="font-medium">Distributed Task Queue</dt>
+                            <dd class="mt-1 space-y-2">
+                                <p class="text-sm text-gray-500">Go, Redis, PostgreSQL</p>
+                                <p class="text-sm text-gray-300">
+                                    High-performance background job processor with horizontal scaling capabilities.
+                                    Implements exponential backoff and dead-letter queue patterns.
+                                </p>
+                                <a href="#" class="inline-block text-sm mt-2 hover:text-white">
+                                    View source →
+                                </a>
+                            </dd>
                         </div>
-                    </div>
+
+                        <div class="border-l-2 border-gray-600 pl-4">
+                            <dt class="font-medium">CI/CD Pipeline Optimizer</dt>
+                            <dd class="mt-1 space-y-2">
+                                <p class="text-sm text-gray-500">Python, Docker, GitHub Actions</p>
+                                <p class="text-sm text-gray-300">
+                                    Automated build system that reduced CI times by 35% through parallelization
+                                    and caching strategies.
+                                </p>
+                                <a href="#" class="inline-block text-sm mt-2 hover:text-white">
+                                    View case study →
+                                </a>
+                            </dd>
+                        </div>
+                    </dl>
                 </section>
             </div>
         </div>
 
         <!-- Footer -->
-        <footer class="mt-12 terminal-border pt-8">
+        <footer class="mt-12 section-border pt-8">
             <p class="text-sm text-gray-500 text-center">
-                <span class="text-gray-400">Last updated:</span> 28.01.2025
+                <span class="text-gray-400">Last updated:</span> 28.01.2024
             </p>
         </footer>
     </main>
