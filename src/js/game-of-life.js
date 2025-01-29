@@ -57,7 +57,7 @@ function nextGen() {
     grid = newGrid;
 }
 
-const duration = 200; // Adjust speed
+const duration = 300; // Adjust speed
 
 function update() {
     nextGen();
