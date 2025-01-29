@@ -17,7 +17,7 @@ let grid = Array.from({ length: ROWS }, () =>
 
 function drawGrid() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.fillStyle = "rgba(255, 255, 255, 0.2)";
+    ctx.fillStyle = "rgba(255, 255, 255, 0.3)";
 
     for (let r = 0; r < ROWS; r++) {
         for (let c = 0; c < COLS; c++) {
